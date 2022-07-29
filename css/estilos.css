@@ -1,0 +1,394 @@
+/*Fonts*/
+@font-face {
+    font-family: "edu";
+    src: url("../assets/fonts/EduSABeginner-VariableFont_wght.ttf");
+}
+/*Selector Universal*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*Index*/
+html{
+    height: 100px;
+}
+body{
+    background-color: rosybrown;
+}
+.font-destacados{
+    font-family: "edu";
+    font-size: 2rem;
+}
+.font-title{
+    font-family: "edu";
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.font-list{
+    font-family: "edu";
+    font-size: 30px;
+}
+button{
+    font-family: "edu";
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+#nav{
+    font-family: "edu";
+    font-size: 30px;
+    list-style-type: none;
+    background-color: #32a899;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+ul li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+ol{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*background-image*/
+/*Efecto-Parallax*/
+.banner{
+    font-family: "edu";
+    font-size: 2rem;
+    background-image: url("../assets/backgrounds/sharon-mccutcheon-5djh4Yb-2zI-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#footer{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: black;
+    background-image: url("../assets/backgrounds/brooke-lark-ZkgWJ4BfgsE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "edu";
+    font-size: 2rem;
+}
+main section article{
+    width: 700px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+header{
+    width: 700px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.recetas{
+    width: 700px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+/*Metodologia BEM
+.contenedor{
+    max-width: 500px;
+    width: 100%;
+    margin-left: 15px;
+}
+/*Bloque 1
+.tarjeta{
+    width: 600px;
+    border: 5px dashed #b559a3;
+}
+.tarjeta__miniatura{
+    height: 200px;
+}
+.tarjeta__video{
+    width: 60%;
+}
+.tarjeta__textos{
+    font-family: "edu";
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+.tarjeta__enlace{
+    color: #b559a3;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "edu";
+}
+.tarjeta__parrafo{
+    font-family: "edu";
+    max-width: 90%;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+/*Bloque 2*
+.boton{
+    padding: 12px 25px;
+    background-color: #b559a3;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+} */
+/*Productos*/
+.productos{
+    background-color: rosybrown;
+}
+.section-productos{
+    width: 700px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+/*Nosotros*/
+.nosotros{
+    background-image: url("../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 1000px;
+    background-size: cover;
+}
+.p-nosotros{
+    text-align: center;
+    font-family: "edu";
+    font-size: 2rem;
+}
+/*Promociones*/
+.promociones{
+    background-color: rosybrown;
+}
+.section-promociones{
+    width: 700px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+/*Contacto*/
+.contacto{
+    background-color: rosybrown;
+    font-family: "edu";
+}
+.box{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+/*Nav con flexbox*/
+.menu-items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu-items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu-items li a{
+    padding: 7px 13px;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+.menu-items li:hover, li.active{
+    background-color: rgba(0, 0, 0, .3);
+    transition: .4s;
+}
+.btn-menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*footer con flexbox*/
+.redessociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/*Formulario de contacto con Grid responsive*/
+.body-contact{
+    color: black;
+    font-family: "edu";
+    padding: 0 1.5rem;
+}
+.contenido{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+.nombre-empresa{
+    margin-bottom: 1rem;
+    color: #803857;
+    text-align: center;
+    font-size: 3rem;
+}
+.contenedor-contacto{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3)
+}
+.contenedor-contacto > *{
+    padding: 1rem;
+}
+.formulario-contacto{
+    background-color: white;
+}
+.formulario-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.formulario-contacto form .bloque{
+    grid-column: 1/3;
+}
+.formulario-contacto form p{
+    margin: 0;
+    padding: 1rem;
+}
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea{
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid#803857;
+    color: black;
+}
+.formulario-contacto form button{
+    background-color: #803857;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.info-contacto{
+    background-color: white;
+}
+.info-contacto ul,
+.info-contacto p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.info-contacto ul{
+    list-style-type: none;
+    padding: 0;
+}
+.info-contacto ul li{
+    padding: .3rem;
+}
+/*img index con flexbox*/
+.flex-container{
+    display: flex;
+    
+}
+.items-item1{
+    justify-content: start;
+    margin: 20px;
+    text-align: center;
+}
+.items-item2{
+    justify-content: center;
+    text-align: center;
+}
+.items-item3{
+    justify-content: flex-end;
+    text-align: center;
+}
+/*Grid*/
+.colums{
+    display: flex;
+    justify-content: space-around;
+}
+.grid-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 4fr;
+}
+.fila1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-content: center;
+}
+.fila2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-items: stretch;
+}
+.colums{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+/*Media queries*/
+@media (min-width: 768px){
+    .body-contact{
+        height: 100vh;
+        padding: 0 4rem;
+    }
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contenedor-contacto > *{
+        padding: 2rem;
+    }
+    .info-contacto ul,
+    .info-contacto p{
+        padding: 1rem;
+        text-align: left;
+    }
+}
+/*mobile first*/
+@media only screen and (max-width:576px){
+    /*estilos generales*/
+    #nav{
+        flex-direction: column;
+        height: 105px;
+        width: 100vh;
+        align-items: stretch;
+    }
+    .menu-items li a{
+        margin: 0;
+        font-size: 16px;
+    }
+    #footer{
+        display: flex;
+        align-items: stretch;
+    }
+    .redessociales{
+        flex-direction: row;
+        margin: auto;
+    }
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
