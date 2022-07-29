@@ -347,6 +347,23 @@ header{
     grid-column: 2/4;
     grid-row: 2/3;
 }
+/*encabezado nuevo git*/
+.encabezado{
+    font-family: "edu";
+    font-size: 25px;
+    text-align: center;
+    color: black ;
+    text-transform: uppercase;
+    text-decoration: solid;
+
+    animation-name: backInLeft;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-out;
+}
+.span-encabezado{
+    color: #803857;
+}
 /*Media queries*/
 @media (min-width: 768px){
     .body-contact{
