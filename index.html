@@ -19,6 +19,7 @@
     <title>Erase una vez-Home</title>
 </head>
 <body>
+  <!--Nav con bootstrap-->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"> <img src="../assets/icons/Erase una vez - logo (1).png" alt="" width="65px"></a>
@@ -55,29 +56,42 @@
         </div>
       </nav>
     <h1 class="encabezado animate__animated animate__backInLeft">Bienvenidos a <span class="span-encabezado">Erase una vez</span></h1>
-    <header class="grid-container">
-        <h1 class="font-title" class="fila1">Los mas pedidos</h1>
-        <h4 class="font-list" class="fila2">Destacados</h4>
-        <ol type="1" class="colums"> 
-            <li class="font-list">Lemon Pie</li>
-            <li class="font-list">Bownie</li>
-            <li class="font-list">Cheesecake</li>
-        </ol>
-    </header>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Los mas pedidos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Lemon pie</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Brownie</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Cheesecake</td>
+      </tr>
+    </tbody>
+  </table>
     <main id="pedidos">
         <section class="flex-container"> 
             <article class="items-item1">
-                <h1> <img src="./assets/img/lemon pie.jpg" alt="lemon pie" width="200px"></h1>
+                <h1> <img class="img-principal" src="./assets/img/lemon pie.jpg" alt="lemon pie" width="200px"></h1>
                 <p class="font-destacados">Lemon Pie</p>
                 <button class="btn btn-light">Comprar</button>
             </article>
             <article class="items-item2">
-                <h1> <img src="./assets/img/brownie.jpg" alt="Brownie" width="220px"></h1>
+                <h1> <img class="img-principal" src="./assets/img/brownie.jpg" alt="Brownie" width="220px"></h1>
                 <p class="font-destacados">Brownie</p>
                 <button class="btn btn-light">Comprar</button>
             </article>
             <article class="items-item3">
-                <h1> <img src="./assets/img/cheesecake.jpg" alt="cheesecake" width="200px"></h1>
+                <h1> <img class="img-principal" src="./assets/img/cheesecake.jpg" alt="cheesecake" width="200px"></h1>
                 <p class="font-destacados">Cheesecake</p>
                 <button class="btn btn-light">Comprar</button>
             </article>
