@@ -6,7 +6,32 @@ h1{
 p{
     color: $color-parrafos;
 }
+//Maps
+$estilos: (
+    color: #bc8f8f,
+    violeta:#803857,
+    blanco: #ffffff,
+);
+body{
+    background-color: map-get($map: $estilos, $key: color);
+}
+//Mixin
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+.icon{
+    @include size(75px, 75px);
+}
+//Extend
+.section-promociones{
+    @extend .flex-container;
+}
+.img-promociones{
+    @extend .img-principal;
+}
 
+//Codigo Css
 /*Fonts*/
 @font-face {
     font-family: "edu";
