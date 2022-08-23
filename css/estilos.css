@@ -15,6 +15,48 @@ body {
   width: 75px;
 }
 
+/*nosotros*/
+.header-nosotros {
+  background-image: url(../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  width: 100%;
+  position: relative;
+  padding: 5rem 0;
+}
+
+.header-nosotros::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.contenido-header {
+  position: relative;
+}
+
+.title-nosotros {
+  color: #ffa1f7;
+  text-align: center;
+  font-family: "edu";
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.p-nosotros {
+  color: #ffa1f7;
+  text-align: center;
+  font-family: "edu";
+  font-size: 50px;
+}
+
 /*Fonts*/
 @font-face {
   font-family: "edu";
@@ -30,10 +72,6 @@ body {
 /*Index*/
 html {
   height: 100px;
-}
-
-body {
-  background-color: rosybrown;
 }
 
 .font-destacados {
@@ -56,8 +94,8 @@ body {
 button {
   font-family: "edu";
   font-size: 20px;
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
   border-radius: 10px;
 }
 
@@ -74,7 +112,7 @@ button {
 #footer {
   width: 100%;
   padding: 20px 20px;
-  background-color: black;
+  background-color: #000000;
   background-image: url("../assets/backgrounds/brooke-lark-ZkgWJ4BfgsE-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -83,14 +121,6 @@ button {
 }
 
 main section article {
-  width: 700px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  border-radius: 10px;
-}
-
-header {
   width: 700px;
   margin-top: 10px;
   margin-right: 10px;
@@ -117,7 +147,7 @@ header {
 
 /*Productos*/
 .productos {
-  background-color: rosybrown;
+  background-color: #bc8f8f;
 }
 
 .section-productos {
@@ -128,27 +158,7 @@ header {
   border-radius: 10px;
 }
 
-/*Nosotros*/
-.nosotros {
-  background-image: url("../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: 1000px;
-  background-size: cover;
-}
-
-.p-nosotros {
-  text-align: center;
-  font-family: "edu";
-  font-size: 2rem;
-}
-
 /*Promociones*/
-.promociones {
-  background-color: rosybrown;
-}
-
 .section-promociones {
   width: 700px;
   margin-top: 10px;
@@ -158,10 +168,6 @@ header {
 }
 
 /*Contacto*/
-.contacto {
-  background-color: rosybrown;
-}
-
 .box {
   font-size: 2rem;
   width: 100%;
@@ -210,7 +216,7 @@ header {
 
 /*Formulario de contacto con Grid responsive*/
 .body-contact {
-  color: black;
+  color: #000000;
   font-family: "edu";
   padding: 0 1.5rem;
 }
@@ -238,7 +244,7 @@ header {
 }
 
 .formulario-contacto {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .formulario-contacto form {
@@ -264,7 +270,7 @@ header {
   background: none;
   outline: none;
   border-bottom: 1px solid #803857;
-  color: black;
+  color: #000000;
 }
 
 .formulario-contacto form button {
@@ -275,7 +281,7 @@ header {
 }
 
 .info-contacto {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .info-contacto ul,
@@ -369,6 +375,21 @@ header {
 
 .img-principal:hover, .img-promociones:hover {
   transform: scale(1.15);
+}
+
+/*nosotros*/
+.container-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #bc8f8f;
+  padding: 0 20px;
+}
+
+/*promociones*/
+.promos {
+  margin: 20px 20px;
 }
 
 /*Media queries*/

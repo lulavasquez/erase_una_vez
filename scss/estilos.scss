@@ -11,6 +11,8 @@ $estilos: (
     color: #bc8f8f,
     violeta:#803857,
     blanco: #ffffff,
+    negro: #000000,
+    rosa: #ffa1f7,
 );
 body{
     background-color: map-get($map: $estilos, $key: color);
@@ -30,7 +32,44 @@ body{
 .img-promociones{
     @extend .img-principal;
 }
-
+//nosotros
+/*nosotros*/
+.header-nosotros{
+    background-image: url(../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    padding: 5rem 0;
+  }
+  .header-nosotros::before{
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+  }
+  .contenido-header{
+    position: relative;
+  }
+  .title-nosotros{
+    color: map-get($map: $estilos, $key: rosa);
+    text-align: center;
+    font-family: "edu";
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  .p-nosotros{
+    color: map-get($map: $estilos, $key: rosa);
+    text-align: center;
+    font-family: "edu";
+    font-size: 50px;
+  }
 //Codigo Css
 /*Fonts*/
 @font-face {
@@ -47,9 +86,7 @@ body{
 html{
     height: 100px;
 }
-body{
-    background-color: rosybrown;
-}
+
 .font-destacados{
     font-family: "edu";
     font-size: 2rem;
@@ -67,8 +104,8 @@ body{
 button{
     font-family: "edu";
     font-size: 20px;
-    color: white;
-    background-color: black;
+    color:map-get($map: $estilos, $key: blanco);
+    background-color: map-get($map: $estilos, $key: negro);
     border-radius: 10px;
 }
 /*background-image*/
@@ -83,13 +120,14 @@ button{
 #footer{
     width: 100%;
     padding: 20px 20px;
-    background-color: black;
+    background-color: map-get($map: $estilos, $key: negro);
     background-image: url("../assets/backgrounds/brooke-lark-ZkgWJ4BfgsE-unsplash.jpg");
     background-size: cover;
     background-position: center;
     font-family: "edu";
     font-size: 2rem;
 }
+
 main section article{
     width: 700px;
     margin-top: 10px;
@@ -97,13 +135,7 @@ main section article{
     margin-left: 10px;
     border-radius: 10px;
 }
-header{
-    width: 700px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 10px;
-}
+
 .recetas{
     width: 700px;
     margin-top: 10px;
@@ -121,7 +153,7 @@ header{
 }
 /*Productos*/
 .productos{
-    background-color: rosybrown;
+    background-color: map-get($map: $estilos, $key: color);
 }
 .section-productos{
     width: 700px;
@@ -130,24 +162,8 @@ header{
     margin-left: 10px;
     border-radius: 10px;
 }
-/*Nosotros*/
-.nosotros{
-    background-image: url("../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 1000px;
-    background-size: cover;
-}
-.p-nosotros{
-    text-align: center;
-    font-family: "edu";
-    font-size: 2rem;
-}
+
 /*Promociones*/
-.promociones{
-    background-color: rosybrown;
-}
 .section-promociones{
     width: 700px;
     margin-top: 10px;
@@ -156,9 +172,6 @@ header{
     border-radius: 10px;
 }
 /*Contacto*/
-.contacto{
-    background-color: rosybrown;
-}
 .box{
     font-size: 2rem;
     width: 100%;
@@ -202,7 +215,7 @@ header{
 }
 /*Formulario de contacto con Grid responsive*/
 .body-contact{
-    color: black;
+    color: map-get($map: $estilos, $key: negro);
     font-family: "edu";
     padding: 0 1.5rem;
 }
@@ -214,7 +227,7 @@ header{
 }
 .nombre-empresa{
     margin-bottom: 1rem;
-    color: #803857;
+    color: map-get($map: $estilos, $key: violeta);
     text-align: center;
     font-size: 3rem;
 }
@@ -225,7 +238,7 @@ header{
     padding: 1rem;
 }
 .formulario-contacto{
-    background-color: white;
+    background-color: map-get($map: $estilos, $key: blanco);
 }
 .formulario-contacto form{
     display: grid;
@@ -247,16 +260,16 @@ header{
     background: none;
     outline: none;
     border-bottom: 1px solid#803857;
-    color: black;
+    color: map-get($map: $estilos, $key: negro);
 }
 .formulario-contacto form button{
-    background-color: #803857;
+    background-color: map-get($map: $estilos, $key: violeta);
     border: 0;
     text-transform: uppercase;
     padding: 1rem;
 }
 .info-contacto{
-    background-color: white;
+    background-color: map-get($map: $estilos, $key: blanco);
 }
 .info-contacto ul,
 .info-contacto p{
@@ -328,7 +341,7 @@ header{
     animation-timing-function: ease-out;
 }
 .span-encabezado{
-    color: #803857;
+    color: map-get($map: $estilos, $key: violeta);
 }
 /*animacion img index*/
 .flex-container{
@@ -336,6 +349,19 @@ header{
 }
 .img-principal:hover{
     transform: scale(1.15);
+}
+/*nosotros*/
+.container-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: map-get($map: $estilos, $key: color);
+    padding: 0 20px;
+}
+/*promociones*/
+.promos{
+    margin: 20px 20px;
 }
 /*Media queries*/
 @media (min-width: 768px){
