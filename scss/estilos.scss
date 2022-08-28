@@ -8,11 +8,12 @@ p{
 }
 //Maps
 $estilos: (
-    color: #bc8f8f,
+    color: #d5c6e0,
     violeta:#803857,
     blanco: #ffffff,
     negro: #000000,
     rosa: #ffa1f7,
+    azul: #192a51,
 );
 body{
     background-color: map-get($map: $estilos, $key: color);
@@ -35,15 +36,15 @@ body{
 //nosotros
 /*nosotros*/
 .header-nosotros{
-    background-image: url(../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg);
+    background-image: url("../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 50rem;
     width: 100%;
     position: relative;
-    padding: 5rem 0;
-  }
+    display: flex;
+}
   .header-nosotros::before{
     position: absolute;
     content: '';
@@ -55,20 +56,12 @@ body{
     opacity: .5;
   }
   .contenido-header{
-    position: relative;
-  }
-  .title-nosotros{
-    color: map-get($map: $estilos, $key: rosa);
-    text-align: center;
-    font-family: "edu";
-    font-size: 4rem;
-    text-transform: uppercase;
-  }
-  .p-nosotros{
-    color: map-get($map: $estilos, $key: rosa);
-    text-align: center;
-    font-family: "edu";
-    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    justify-items: center;
   }
 //Codigo Css
 /*Fonts*/
@@ -121,15 +114,20 @@ button{
     width: 100%;
     padding: 20px 20px;
     background-color: map-get($map: $estilos, $key: negro);
-    background-image: url("../assets/backgrounds/brooke-lark-ZkgWJ4BfgsE-unsplash.jpg");
+    background-image: url("../assets/backgrounds/deva-williamson-K2ZFPgTjMDI-unsplash.jpg");
     background-size: cover;
     background-position: center;
     font-family: "edu";
     font-size: 2rem;
 }
-
+.footer-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #000000;
+}
 main section article{
-    width: 700px;
+    width: 100%;
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 10px;
@@ -210,78 +208,22 @@ main section article{
 /*footer con flexbox*/
 .redessociales{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
+    
 }
-/*Formulario de contacto con Grid responsive*/
+i{
+    border-radius: 10px;
+    color: #000000;
+}
+/*Formulario de contacto*/
 .body-contact{
-    color: map-get($map: $estilos, $key: negro);
-    font-family: "edu";
-    padding: 0 1.5rem;
-}
-.contenido{
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
+    position: relative;
+    margin: auto;
 }
 .nombre-empresa{
-    margin-bottom: 1rem;
-    color: map-get($map: $estilos, $key: violeta);
+    font-family: "edu";
+    color: #803857;
     text-align: center;
-    font-size: 3rem;
-}
-.contenedor-contacto{
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3)
-}
-.contenedor-contacto > *{
-    padding: 1rem;
-}
-.formulario-contacto{
-    background-color: map-get($map: $estilos, $key: blanco);
-}
-.formulario-contacto form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.formulario-contacto form .bloque{
-    grid-column: 1/3;
-}
-.formulario-contacto form p{
-    margin: 0;
-    padding: 1rem;
-}
-.formulario-contacto form button,
-.formulario-contacto form input,
-.formulario-contacto form textarea{
-    width: 100%;
-    padding: .7rem;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 1px solid#803857;
-    color: map-get($map: $estilos, $key: negro);
-}
-.formulario-contacto form button{
-    background-color: map-get($map: $estilos, $key: violeta);
-    border: 0;
-    text-transform: uppercase;
-    padding: 1rem;
-}
-.info-contacto{
-    background-color: map-get($map: $estilos, $key: blanco);
-}
-.info-contacto ul,
-.info-contacto p{
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-.info-contacto ul{
-    list-style-type: none;
-    padding: 0;
-}
-.info-contacto ul li{
-    padding: .3rem;
 }
 /*img index con flexbox*/
 .flex-container{
@@ -341,7 +283,7 @@ main section article{
     animation-timing-function: ease-out;
 }
 .span-encabezado{
-    color: map-get($map: $estilos, $key: violeta);
+    color: map-get($map: $estilos, $key: azul);
 }
 /*animacion img index*/
 .flex-container{
@@ -362,6 +304,12 @@ main section article{
 /*promociones*/
 .promos{
     margin: 20px 20px;
+}
+/*Tabla index*/ 
+.tabla-contenido{
+    width: 40%;
+    margin: 20px;
+    justify-content: center;
 }
 /*Media queries*/
 @media (min-width: 768px){

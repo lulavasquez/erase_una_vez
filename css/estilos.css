@@ -1,13 +1,13 @@
 h1 {
-  color: gray;
-}
-
-p {
   color: #803857;
 }
 
+p {
+  color: #192a51;
+}
+
 body {
-  background-color: #bc8f8f;
+  background-color: #d5c6e0;
 }
 
 .icon {
@@ -17,14 +17,14 @@ body {
 
 /*nosotros*/
 .header-nosotros {
-  background-image: url(../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg);
+  background-image: url("../assets/backgrounds/heather-ford-Fq54FqucgCE-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 50rem;
   width: 100%;
   position: relative;
-  padding: 5rem 0;
+  display: flex;
 }
 
 .header-nosotros::before {
@@ -39,22 +39,12 @@ body {
 }
 
 .contenido-header {
-  position: relative;
-}
-
-.title-nosotros {
-  color: #ffa1f7;
-  text-align: center;
-  font-family: "edu";
-  font-size: 4rem;
-  text-transform: uppercase;
-}
-
-.p-nosotros {
-  color: #ffa1f7;
-  text-align: center;
-  font-family: "edu";
-  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+  justify-items: center;
 }
 
 /*Fonts*/
@@ -113,15 +103,22 @@ button {
   width: 100%;
   padding: 20px 20px;
   background-color: #000000;
-  background-image: url("../assets/backgrounds/brooke-lark-ZkgWJ4BfgsE-unsplash.jpg");
+  background-image: url("../assets/backgrounds/deva-williamson-K2ZFPgTjMDI-unsplash.jpg");
   background-size: cover;
   background-position: center;
   font-family: "edu";
   font-size: 2rem;
 }
 
+.footer-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #000000;
+}
+
 main section article {
-  width: 700px;
+  width: 100%;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
@@ -147,7 +144,7 @@ main section article {
 
 /*Productos*/
 .productos {
-  background-color: #bc8f8f;
+  background-color: #d5c6e0;
 }
 
 .section-productos {
@@ -210,93 +207,24 @@ main section article {
 /*footer con flexbox*/
 .redessociales {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
-/*Formulario de contacto con Grid responsive*/
-.body-contact {
+i {
+  border-radius: 10px;
   color: #000000;
-  font-family: "edu";
-  padding: 0 1.5rem;
 }
 
-.contenido {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
+/*Formulario de contacto*/
+.body-contact {
+  position: relative;
+  margin: auto;
 }
 
 .nombre-empresa {
-  margin-bottom: 1rem;
+  font-family: "edu";
   color: #803857;
   text-align: center;
-  font-size: 3rem;
-}
-
-.contenedor-contacto {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-}
-
-.contenedor-contacto > * {
-  padding: 1rem;
-}
-
-.formulario-contacto {
-  background-color: #ffffff;
-}
-
-.formulario-contacto form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.formulario-contacto form .bloque {
-  grid-column: 1/3;
-}
-
-.formulario-contacto form p {
-  margin: 0;
-  padding: 1rem;
-}
-
-.formulario-contacto form button,
-.formulario-contacto form input,
-.formulario-contacto form textarea {
-  width: 100%;
-  padding: 0.7rem;
-  border: none;
-  background: none;
-  outline: none;
-  border-bottom: 1px solid #803857;
-  color: #000000;
-}
-
-.formulario-contacto form button {
-  background-color: #803857;
-  border: 0;
-  text-transform: uppercase;
-  padding: 1rem;
-}
-
-.info-contacto {
-  background-color: #ffffff;
-}
-
-.info-contacto ul,
-.info-contacto p {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-.info-contacto ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.info-contacto ul li {
-  padding: 0.3rem;
 }
 
 /*img index con flexbox*/
@@ -365,7 +293,7 @@ main section article {
 }
 
 .span-encabezado {
-  color: #803857;
+  color: #192a51;
 }
 
 /*animacion img index*/
@@ -383,13 +311,20 @@ main section article {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #bc8f8f;
+  background: #d5c6e0;
   padding: 0 20px;
 }
 
 /*promociones*/
 .promos {
   margin: 20px 20px;
+}
+
+/*Tabla index*/
+.tabla-contenido {
+  width: 40%;
+  margin: 20px;
+  justify-content: center;
 }
 
 /*Media queries*/
